@@ -103,6 +103,11 @@ public class MainActivity extends AppCompatActivity {
         setNewQuiz();
     }
 
+    public void exitApp(View v) {
+        db.close();
+        finish();
+    }
+
     private void setNewQuiz() {
         end = 0;
         start = System.currentTimeMillis();
